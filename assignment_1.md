@@ -60,3 +60,17 @@ They do not have to be meaningful, but they should be valid semantically.
 For instance, do not call a function taking 2 parameters with 3 arguments.
 
 The example inputs of all teams will be made available to have a decent number of integration tests.
+
+## Submission
+
+Each team (not each person):
+
+1. `cd` into your compiler repository
+2. commit all pending changes
+3. checkout the revision you want to submit
+4. run the following command where `XX` is the number of your team with leading zero (eg `07`)
+
+       $ git archive --prefix=team_XX_assignment_1/ --format=zip HEAD > team_XX_assignment_1.zip
+
+5. send me the resulting archive using the following link (do not modify the subject)\
+   :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)
