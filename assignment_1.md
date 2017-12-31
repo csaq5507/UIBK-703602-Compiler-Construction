@@ -7,7 +7,7 @@ In this assignment you will implement the first part of your mC compiler front-e
 To get you started, some code is provided as [mCc Template](https://github.com/W4RH4WK/mCc).
 Your are encouraged, but *not required* to use this code-base.
 
-Note that the template repository contains the specification of the input language mC.
+The specification of the input language mC can be found in [`mC_specification.md`](mC_specification.md).
 
 Your compiler must be written in C, although you can use C++ for unit testing.
 
