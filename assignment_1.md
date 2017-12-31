@@ -1,6 +1,6 @@
 # Assignment 1 -- Flex / Bison
 
-*due on 11 April 2018*
+*due on 4 April 2018*
 
 In this assignment you will implement the first part of your mC compiler front-end.
 

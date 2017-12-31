@@ -3,19 +3,10 @@
 |    Date    |   Deadline   |                Topic                 |
 | ---------- | ------------ | ------------------------------------ |
 | 2018-03-07 |              | Welcome                              |
-| 2018-03-14 |              |                                      |
-| 2018-03-21 |              |                                      |
-| 2018-04-11 | Assignment 1 | Flex / Bison                         |
-| 2018-04-18 |              |                                      |
-| 2018-04-25 |              |                                      |
-| 2018-05-02 | Assignment 2 | Semantic Checks / Type Checking / IR |
-| 2018-05-09 |              |                                      |
-| 2018-05-16 |              |                                      |
-| 2018-05-23 | Assignment 3 | Assembly                             |
-| 2018-05-30 |              |                                      |
+| 2018-04-04 | Assignment 1 | Flex / Bison                         |
+| 2018-04-25 | Assignment 2 | Semantic Checks / Type Checking / IR |
+| 2018-05-16 | Assignment 3 | Assembly                             |
 | 2018-06-06 | Assignment 4 | Recursive Descent Parser             |
-| 2018-06-13 |              |                                      |
-| 2018-06-20 |              |                                      |
 | 2018-06-27 | Assignment 5 | Optimisations                        |
 
 The lab will take place in HSB 5.
