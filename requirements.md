@@ -9,6 +9,8 @@ Deviate from these requirements only if you have valid reasons to do so.
 - files are UTF-8 encoded and use Unix line-endings (`\n`)
 - files contain *one* newline at the end
 - lines do not contain trailing white-space
+- do not waste time or space (memory leaks)
+- check for leaks using `valgrind`, especially in error cases
 
 ## Plain-Text Files
 
