@@ -1,7 +1,10 @@
 # mC Specification
 
-This document defines *mC* -- a tiny, C-like language used throughout this pro-seminar.
+This document defines *mC* -- a tiny, C-like language used throughout this course.
 The semantics of mC are identical to C unless otherwise specified.
+
+Please note that the specification may contain errors and ambiguities.
+It may therefore be modified slightly throughout the course to correct such issues.
 
 ## Grammar
 
