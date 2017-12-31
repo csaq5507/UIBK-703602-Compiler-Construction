@@ -157,6 +157,19 @@ In C, the parameters list of a function taking no arguments contains only `void`
 For mC we simply use an empty parameter list.
 Hence, instead of writing `int foo(void)` we write `int foo()`, where `foo` is the name of a function returning an `int` and taking no arguments.
 
+### Dangling Else
+
+A *dangling else* belongs to the most inner *if*.
+The following mC code snippets are semantically equivalent:
+
+    if (c1)        |  if (c1) {
+        if (c2)    |      if (c2) {
+            f2();  |          f2();
+        else       |      } else {
+            f3();  |          f3();
+                   |      }
+                   |  }
+
 ## I/O
 
 The following built-in functions will be provided by the compiler for I/O operations:
