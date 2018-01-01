@@ -5,14 +5,14 @@
 In this assignment you will implement the first part of your mC compiler front-end.
 
 To get you started, some code is provided as [mCc Template](https://github.com/W4RH4WK/mCc).
-Your are encouraged, but *not required* to use this code-base.
+You are encouraged, but *not required* to use this code-base.
 
 The specification of the input language mC can be found in [`mC_specification.md`](mC_specification.md).
 
 Your compiler must be written in C, although you can use C++ for unit testing.
 
 Build your compiler as (shared) library and use it via dedicated executables.
-See the template repository regarding this requirement.
+An example for this can be found in the provided code.
 
 ## Task 0
 
@@ -24,7 +24,7 @@ State *and justify* all modifications in the markdown file `doc/changes.md`.
 
 Implement an abstract syntax tree (AST) which models the input language.
 
-(Optional) Implement a visitor mechanism which houses the logic for traversing the AST.
+(Optional) Implement a visitor mechanism which houses the logic of traversing the AST.
 
 Provide a mechanism to print a given AST in the [DOT format] so it can be visualised using [Graphviz].
 
@@ -48,10 +48,10 @@ Modify your lexer and parser implementation to do basic error handling.
 Do not worry about error recovery or such fancy features.
 Simply terminate the parsing process (not the application) and provide some meaningful error on what went wrong.
 
-Do not print to `stdout` / `stderr` directly!
+Do not print to `stdout` / `stderr`!
 Your *parse* function should return a *parser result* which, either contains the AST upon parsing valid input, or a meaningful error.
 
-Ensure you do not leak memory upon encountering a parse error.
+Ensure you do not leak memory upon parsing an invalid input program.
 
 ## Task 4
 
@@ -59,7 +59,9 @@ Create 4 different, valid example inputs, each around 30 lines of code.
 They do not have to be meaningful, but they should be valid semantically.
 For instance, do not call a function taking 2 parameters with 3 arguments.
 
-The example inputs of all teams will be made available to have a decent number of integration tests.
+All 4 examples combined should cover everything stated in the specification.
+
+The example inputs of all teams will be made available so everyone has a decent number of integration tests.
 
 ## Submission
 
@@ -72,5 +74,7 @@ Each team (not each person):
 
        $ git archive --prefix=team_XX_assignment_1/ --format=zip HEAD > team_XX_assignment_1.zip
 
-5. send me the resulting archive using the following link (do not modify the subject)\
-   :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)
+5. ensure the resulting archive contains everything you want to submit, and nothing more (no binaries, etc)
+6. send me the resulting archive using the following link (do not modify the subject)
+
+:email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)

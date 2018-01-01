@@ -4,7 +4,7 @@ This document defines *mC* -- a tiny, C-like language used throughout this cours
 The semantics of mC are identical to C unless otherwise specified.
 
 Please note that the specification may contain errors and ambiguities.
-It may therefore be modified slightly throughout the course to correct such issues.
+It may therefore be modified slightly throughout the course to correct for such issues.
 
 ## Grammar
 
@@ -16,7 +16,7 @@ The next segment presents the grammar of mC using this notation:
 - `( )` indicates grouping
 - `[ ]` indicates optional parts (0 or 1)
 - `{ }` indicates repetition (1 or more)
-- `[ ]` and `{ }` can be combined to represent *0 or more repetition*
+- `[ ]` and `{ }` can be combined to build 0 or more repetition
 - `" "` indicates a terminal string
 - `/ /` indicates a [RegEx]
 
@@ -75,7 +75,7 @@ single_expr      = literal
 literal          = bool_literal
                  | int_literal
                  | float_literal
-		 | string_literal
+                 | string_literal
 
 
 # Statements
@@ -117,34 +117,33 @@ program = [ { function_def } ]
 
 mC supports only *C-style* comments, starting with `/*` and ending with `*/`.
 Like in C, they can span across multiple lines.
-Comments are discarded by the parser, but do not forget to take newlines into account.
+Comments are discarded by the parser, but do not forget to track newlines correctly.
 
 ## Special Semantics
 
 ### Boolean
 
 For mC we consider `bool` a first-class citizen, distinct from `int`.
-Yet we skip boolean binary operators like `&&` and `||`.
+Yet we skip on boolean binary operators like `&&` and `||`.
 
 ### Strings
 
 Strings are immutable and do not support any operation (eg concatenation).
 Yet, like comments, strings can span across multiple lines.
 
-Their sole purpose is to be used with a `print` function for which an implementation will be provided by the compiler.
+Their sole purpose is to be used with the built-in `print` function for which an implementation will be provided by the compiler.
 
 ### Type Conversion
 
 There are no type conversion, neither implicit nor explicit.
 
-An expression used as a condition (`if` or `while`) is expected to be of type `bool`.
+An expression used as a condition (for `if` or `while`) is expected to be of type `bool`.
 This will be enforced later on by the type checker.
 
-### Program
+### Entry Point
 
-Your top-level rule is `program` which simply consists of a 0 or more function definitions.
+Your top-level rule is `program` which simply consists of 0 or more function definitions.
 While the parser happily accepts empty source files, we will later enforce that one function named `main` must be present.
-This is the entry point of the program.
 
 ### Declaration, Definition, and Initialization
 
@@ -152,7 +151,7 @@ This is the entry point of the program.
 
 Furthermore we do not provide a way to declare functions.
 All functions are declared by their definition.
-It is possible to use a function before it has been defined.
+It is possible to call a function before it has been defined.
 
 ### Empty Parameter List
 
@@ -162,26 +161,26 @@ Hence, instead of writing `int foo(void)` we write `int foo()`, where `foo` is t
 
 ### Dangling Else
 
-A *dangling else* belongs to the most inner *if*.
+A *dangling else* belongs to the innermost `if`.
 The following mC code snippets are semantically equivalent:
 
-    if (c1)        |  if (c1) {
-        if (c2)    |      if (c2) {
-            f2();  |          f2();
-        else       |      } else {
-            f3();  |          f3();
-                   |      }
-                   |  }
+    if (c1)              |        if (c1) {
+        if (c2)          |            if (c2) {
+            f2();        |                f2();
+        else             |            } else {
+            f3();        |                f3();
+                         |            }
+                         |        }
 
 ## I/O
 
 The following built-in functions will be provided by the compiler for I/O operations:
 
-- `print`       outputs a given string to `stdout`
-- `print_nl`    outputs the new-line character (`\n`) to `stdout`
-- `print_int`   outputs a given integer to `stdout`
-- `print_float` outputs a given float to `stdout`
-- `read_int`    reads an integer from `stdin`
-- `read_float`  reads a float from `stdin`
+- `void print(string)`      outputs the given string to `stdout`
+- `void print_nl()`         outputs the new-line character (`\n`) to `stdout`
+- `void print_int(int)`     outputs the given integer to `stdout`
+- `void print_float(float)` outputs the given float to `stdout`
+- `int read_int()`          reads an integer from `stdin`
+- `float read_float()`      reads a float from `stdin`
 
-With these, it we can create simple, interactive programs.
+With these, we can create simple, interactive programs.

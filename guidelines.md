@@ -1,6 +1,6 @@
-# Requirements
+# Guidelines
 
-Deviate from these requirements only if you have valid reasons to do so.
+Deviate from these guidelines only if you have a valid reasons to do so.
 
 ## General
 
@@ -17,8 +17,8 @@ Deviate from these requirements only if you have valid reasons to do so.
 - lines must not exceed 80 columns
 - content is properly formatted
     - well structured
-    - paragraphs are separated by one empty line
-    - headings are clearly visible
+    - paragraphs are clearly separated
+    - headings stand out
 - files may contain *ASCII art* (not restricted to ASCII, UTF-8 characters are okay)
 - files should be *self-contained* (ie no references to other files like images or so)
 
@@ -35,12 +35,13 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 - use a formatting tool, like [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
 - stick to the formatting used in the provided code-base
 - lines should not exceed 80 columns
-- the structure of a source file should be similar to its corresponding header file.
+- the structure of a source file should be similar to its corresponding header file
 
 ## System
 
-I'll be using a virtualised, up-to-date Ubuntu 17.10 (64 bit) to examine your submissions.
-This tells you which software versions I'll be using.
+I'll be using a virtualised, updated Ubuntu 17.10 (64 bit) to examine your submissions.
+The submitted code has to compile and run on this system.
+This information tells you which software versions I'll be using.
 
 ## Build System
 
@@ -57,14 +58,14 @@ Switching to a *debug build* configuration should be possible via a commandline 
 
 I highly recommend using [GoogleTest](https://github.com/google/googletest).
 But you can choose a different unit testing framework if you want.
-Just make sure it can be easily installed via your build system, or is present as package in my examination system's default package repository.
+Just make sure it is present as package in my examination system's default package repository, or can be easily installed via your build system.
 
-All of your unit tests should be run issuing only a single command (given the application has been built).
+All of your unit tests should be run issuing only a single command (given the tests have been built).
 I am expecting something like:
 
     $ ninja test
 
-Your README must include instructions on how to build, and run your tests.
+Your README must include instructions on how to build your code, run your unit and integration tests.
 
 ## Integration Testing
 
