@@ -49,7 +49,7 @@ You do not have to inform me about your absence.
 If you have questions or want to know more about a certain topic, I am always glad to help.
 You can find me in room 2W05 of the ICT building.
 
-You can also contact me by email, just be sure to send it from your university account.
-Please keep your email informal and include the course number in the subject.
+You can also contact me by email, please use the following link and *append* to the subject.
+Send the email from your university account, it may be discarded otherwise.
 
 :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20)
