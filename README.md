@@ -23,6 +23,10 @@ Sample solutions may be provided *only* on very special occasions.
 You will be able to work on the assignments during the lab.
 I'll be present for questions all the time, yet a big part of this course is to acquire the necessary knowledge yourself.
 
+Please note that while assignments are visible from the beginning, major modifications may be made until 3 weeks before the deadline.
+Minor changes may be made until 1 week before the deadline.
+So please double check for modifications before submitting -- Git provides you the diff anyway.
+
 ## Grading
 
 Each submission (regarding an assignment) receives a grade.
