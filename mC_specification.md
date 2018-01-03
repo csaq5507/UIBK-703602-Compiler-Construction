@@ -183,4 +183,6 @@ The following built-in functions will be provided by the compiler for I/O operat
 - `int read_int()`          reads an integer from `stdin`
 - `float read_float()`      reads a float from `stdin`
 
+An implementation is provided in [`mC_builtins.c`](mC_builtins.c).
+
 With these, we can create simple, interactive programs.
