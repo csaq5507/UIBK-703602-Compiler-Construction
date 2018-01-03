@@ -87,12 +87,12 @@ This check should also cover call expressions: check for correct number and type
 
 ## Task 5
 
-- Implement the conversion from AST (including symbol tables) to [*three-address code*](https://en.wikipedia.org/wiki/Three-address_code).
+- Implement the conversion from AST (including symbol tables) to [three-address code (TAC)](https://en.wikipedia.org/wiki/Three-address_code).
 
 The checks from the previous tasks should ensure that your input program is actually valid.
 We now leave the wonderful world of mCc's front-end and enter its core.
 
-Pay attention that your three-address code implementation should be independent from the AST implementation.
+Pay attention that your TAC implementation should be independent from the AST implementation.
 It should be possible to completely replace the front-end of the compiler without touching the core.
 
 ## Submission
