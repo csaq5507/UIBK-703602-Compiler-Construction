@@ -14,3 +14,11 @@ The parser interface should stay exactly the same (`parser.h`).
 
 Do not discard the *old* parser from your code-base.
 Add a switch to your build system (generator) which allows one to switch between the generated and handwritten parser at compile time.
+
+## Submission
+
+Follow the steps stated in the first assignment, using the following command to build the archive and the link below.
+
+    $ git archive --prefix=team_XX_assignment_4/ --format=zip HEAD > team_XX_assignment_4.zip
+
+:email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%204)

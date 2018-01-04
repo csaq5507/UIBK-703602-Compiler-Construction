@@ -40,3 +40,11 @@ This also allows us to attach the built-in functions, just pass the C source fil
 Double check whether the built-in functions provided to your back-end compiler use the same calling convention.
 
 You should now have a working compiler which can convert valid mC input programs to executables.
+
+## Submission
+
+Follow the steps stated in the first assignment, using the following command to build the archive and the link below.
+
+    $ git archive --prefix=team_XX_assignment_3/ --format=zip HEAD > team_XX_assignment_3.zip
+
+:email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%203)
