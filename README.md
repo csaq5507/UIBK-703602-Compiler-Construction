@@ -16,6 +16,8 @@ The lab will take place in HSB 5.
 For this course you will be working together in teams to fulfil assignments.
 These assignments will build on-top of each other as the ultimate goal is to build a compiler for a simple, imperative language.
 
+[`bonus_tasks.md`](bonus_tasks.md) contains a list of optional bonus tasks.
+
 You are allowed to use solutions from other teams *after* the corresponding deadline has been reached.
 That said, you really should stick to the code-base you are building together with your team rather than just taking the best looking solution.
 Sample solutions may be provided *only* on very special occasions.
@@ -23,7 +25,7 @@ Sample solutions may be provided *only* on very special occasions.
 You will be able to work on the assignments during the lab.
 I'll be present for questions all the time, yet a big part of this course is to acquire the necessary knowledge yourself.
 
-Please note that while assignments are visible from the beginning, major modifications may be made until 3 weeks before the deadline.
+Please note that major modifications may be made to assignments until 3 weeks before the deadline.
 Minor changes may be made until 1 week before the deadline.
 So please double check for modifications before submitting -- Git provides you the diff anyway.
 

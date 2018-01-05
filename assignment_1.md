@@ -24,8 +24,6 @@ State *and justify* all modifications in the markdown file `doc/changes.md`.
 
 Implement an abstract syntax tree (AST) which models the input language.
 
-(Optional) Implement a visitor mechanism which houses the logic of traversing the AST.
-
 Provide a mechanism to print a given AST in the [DOT format] so it can be visualised using [Graphviz].
 
 [DOT format]: <(https://en.wikipedia.org/wiki/DOT_(graph_description_language)>
