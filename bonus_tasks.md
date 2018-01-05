@@ -10,6 +10,10 @@ You are not obliged to implement them, but doing so may shift your grade.
 - Investigate the tracing / debugging options provided by flex / bison.
   Provide a way to access these debugging options.
 
+- Implement the following AST transformation:
+
+      single_expr(unary_op("-"), single_expr(literal(α)))  ⟹  single_expr(literal(- α))
+
 ## Assignment 2
 
 - Implement some form of trace output for the type checking process.

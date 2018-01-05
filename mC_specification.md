@@ -35,9 +35,9 @@ identifier       = alpha , [ { alpha_num } ]
 
 bool_literal     = "true" | "false"
 
-int_literal      = [ "-" ] , { digit }
+int_literal      = { digit }
 
-float_literal    = [ "-" ] , { digit } , "." , { digit }
+float_literal    = { digit } , "." , { digit }
 
 string_literal   = /"[^"]*"/
 
