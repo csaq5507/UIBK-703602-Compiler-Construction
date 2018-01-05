@@ -22,6 +22,8 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 - Implement a visitor for your CFG.
 
+- Implement the generation of the call graph.
+
 - Perform register allocation.
 
 ## Assignment 4
