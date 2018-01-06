@@ -57,9 +57,9 @@ type             = "bool" | "int" | "float" | "string"
 
 # Declaration / Assignment
 
-declaration      = type , identifier
+declaration      = type , [ "[" , int_literal , "]" ] , identifier
 
-assignment       = identifier , "=" , expression
+assignment       = identifier , [ "[" , expression , "]" ] , "=" , expression
 
 
 # Expressions
@@ -67,7 +67,7 @@ assignment       = identifier , "=" , expression
 expression       = single_expr , [ binary_op , expression ]
 
 single_expr      = literal
-                 | identifier
+                 | identifier , [ "[" , expression , "]" ]
                  | call_expr
                  | unary_op , expression
                  | "(" , expression , ")"
@@ -132,6 +132,32 @@ Strings are immutable and do not support any operation (eg concatenation).
 Yet, like comments, strings can span across multiple lines.
 
 Their sole purpose is to be used with the built-in `print` function for which an implementation will be provided by the compiler.
+
+### Arrays
+
+Only 1D arrays with static size are supported.
+The size must be stated during declaration and is part of the type.
+The following statement declares an array of integers with 42 elements.
+
+    int[42] my_array;
+
+We do not support *any* operations on whole arrays.
+For example, the following code is *invalid*:
+
+    int[10] a;
+    int[10] b;
+    int[10] c;
+
+    c = a + b;    /* not supported */
+
+You'd have to do this via a loop, assigning every element:
+
+    int i;
+    i = 0;
+    while (i < 10) {
+    	c[i] = a[i] + b[i];
+    	i = i + 1;
+    }
 
 ### Type Conversion
 
