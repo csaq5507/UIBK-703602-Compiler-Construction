@@ -1,7 +1,7 @@
 # mC Specification
 
 This document defines *mC* -- a tiny, C-like language used throughout this course.
-The semantics of mC are identical to C unless otherwise specified.
+The semantics of mC are identical to C unless specified otherwise.
 
 Please note that the specification may contain errors and ambiguities.
 It may therefore be modified slightly throughout the course to correct for such issues.
@@ -117,7 +117,7 @@ program = [ { function_def } ]
 
 mC supports only *C-style* comments, starting with `/*` and ending with `*/`.
 Like in C, they can span across multiple lines.
-Comments are discarded by the parser, but do not forget to track newlines correctly.
+Comments are discarded by the parser, but do not forget to take newlines into account for line numbering.
 
 ## Special Semantics
 

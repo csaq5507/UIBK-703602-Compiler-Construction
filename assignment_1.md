@@ -26,13 +26,13 @@ Implement an abstract syntax tree (AST) which models the input language.
 
 Provide a mechanism to print a given AST in the [DOT format] so it can be visualised using [Graphviz].
 
-[DOT format]: <(https://en.wikipedia.org/wiki/DOT_(graph_description_language)>
+[DOT format]: <https://en.wikipedia.org/wiki/DOT_(graph_description_language)>
 [Graphviz]: <https://graphviz.gitlab.io/>
 
 ## Task 2
 
 Implement lexer and parser, using `flex` and `bison` respectively.
-The goal of this task is to have lexer and parser which convert a (valid) mC input program to its corresponding AST.
+The goal of this task is to have a lexer and a parser which convert a (valid) mC input program to its corresponding AST.
 
 - Pay attention to operator precedence.
 - Attach source location information to the resulting AST nodes.
@@ -49,7 +49,7 @@ Simply terminate the parsing process (not the application) and provide some mean
 Do not print to `stdout` / `stderr`!
 Your *parse* function should return a *parser result* which, either contains the AST upon parsing valid input, or a meaningful error.
 
-Ensure you do not leak memory upon parsing an invalid input program.
+Ensure you do not leak memory upon parsing an invalid program.
 
 ## Task 4
 

@@ -8,7 +8,7 @@ You are not obliged to implement them, but doing so may shift your grade.
   Use this visitor for all tasks involving AST traversal.
 
 - Investigate the tracing / debugging options provided by flex / bison.
-  Provide a way to access these debugging options.
+  Provide a way to access these debugging information.
 
 - Implement the following AST transformation:
 
@@ -24,7 +24,7 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 ## Assignment 3
 
-- Implement a visitor for your CFG.
+- Implement a visitor mechanism for your CFGs.
 
 - Implement the generation of the call graph.
 

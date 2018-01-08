@@ -31,12 +31,13 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 - use newlines to separate sentences (works best when using Git)
 - try to be compatible with [Pandoc](https://pandoc.org/)'s interpretation of Markdown
 
-## C / C++ Files
+## C/C++ Files
 
 - use a formatting tool, like [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
-- stick to the formatting used in the provided code-base
+- stick to the formatting used in the provided code-base (similar to [Linux Kernel Coding Style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html))
 - lines should not exceed 80 columns
 - the structure of a source file should be similar to its corresponding header file
+    - separators can be helpful
 
 ## System
 

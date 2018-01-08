@@ -48,7 +48,7 @@ The two code snippets are semantically equivalent:
                 a = 2;        |                     a0 = 2;
                               |
                 int a;        |                     int a1;
-                a = 1;        |                     1a = 1;
+                a = 1;        |                     a1 = 1;
             }                 |                 }
         }                     |             }
     }                         |         }
@@ -82,7 +82,7 @@ Now, simply check each call expression, whether the target function is a member 
 
 - Implement type checking.
 
-As we do not have to worry about implicit type conversion or deal with type deduction, this should be rather similar.
+As we do not have to worry about implicit type conversion or deal with type deduction, this should be rather simple.
 This check should also cover call expressions: check for correct number and types of arguments as well as the return type.
 
 ## Task 5
