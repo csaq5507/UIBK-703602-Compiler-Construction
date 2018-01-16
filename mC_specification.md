@@ -110,7 +110,7 @@ arguments        = expression , [ { "," expression } ]
 
 # Program
 
-program = [ { function_def } ]
+program          = [ { function_def } ]
 ```
 
 ## Comments
