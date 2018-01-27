@@ -12,6 +12,7 @@ Deviate from these guidelines only if you have a valid reasons to do so.
 - enable and minimise compiler warnings
 - do not waste time or space (memory leaks)
 - check for leaks using `valgrind`, especially in error cases
+- keep design and development principles in mind, especially KISS and DRY
 - always state the sources of non-original content
     - use persistent links when possible
     - this also applies to work taken from other teams
