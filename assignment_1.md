@@ -46,8 +46,9 @@ Modify your lexer and parser implementation to do basic error handling.
 Do not worry about error recovery or such fancy features.
 Simply terminate the parsing process (not the application) and provide some meaningful error on what went wrong.
 
-Do not print to `stdout` / `stderr`!
-Your *parse* function should return a *parser result* which, either contains the AST upon parsing valid input, or a meaningful error.
+Do not directly print to `stdout` / `stderr` from your library!
+The *parse* function should return a *parser result* which, either contains the AST upon parsing valid input, or a meaningful error.
+The error message should be examined / printed by the dedicated executable which invoked the *parse* function.
 
 Ensure you do not leak memory upon parsing an invalid program.
 
@@ -58,6 +59,8 @@ They do not have to be meaningful, but they should be valid semantically.
 For instance, do not call a function taking 2 parameters with 3 arguments.
 
 All 4 examples combined should cover everything stated in the specification.
+
+Also, try to do some computational / memory heavy operations in your mC programs so we can later benchmark the generated code.
 
 The example inputs of all teams will be made available so everyone has a decent number of integration tests.
 
@@ -72,7 +75,7 @@ Each team (not each person):
 
        $ git archive --prefix=team_XX_assignment_1/ --format=zip HEAD > team_XX_assignment_1.zip
 
-5. ensure the resulting archive contains everything you want to submit, and nothing more (no binaries, etc)
+5. verify that the resulting archive contains everything you want to submit, and nothing more (no binaries, etc)
 6. send me the resulting archive using the following link (do not modify the subject)
 
 :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)

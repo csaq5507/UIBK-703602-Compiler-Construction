@@ -29,7 +29,7 @@ Furthermore, I recommend having one symbol table per scope, which includes a poi
 
 The symbol table is created by traversing the AST and handling each parameter, declaration, and use of variable.
 Parameters and declarations result in new entries to the symbol table of the corresponding scope.
-While a use of a variable triggers a lookup in the symbol table currently constructed.
+Contrary, a use of a variable triggers a lookup in the symbol table currently constructed.
 The goal is to link each use of a variable to its corresponding entry in the symbol table.
 
 Let me illustrate this by showing how to correctly model [*shadowing*](https://en.wikipedia.org/wiki/Variable_shadowing).
@@ -58,7 +58,7 @@ Every time a new scope opens, a new (empty) symbol table is created.
 `int a` results in a new entry stating that a variable of name `a` and type `int` has been declared.
 Subsequent uses of `a` (eg `a = 1`), should be linked to this entry.
 
-If the lookup fails for the current scope, a lookup in the parent scope is issues.
+If the lookup fails for the current scope, a lookup in the parent scope is issued.
 This happens recursively until the entry is found.
 If no entry exists, you just found an undeclared variable and should report an error.
 
