@@ -35,3 +35,10 @@ You are not obliged to implement them, but doing so may shift your grade.
 - Implement some form of error recovery.
   Do not simply terminate the parsing process upon encountering an error.
   Continue at a sensible point in the token stream and accumulate errors.
+
+- Allow AST transformations to be done by *plugins*.
+  Define an API which every plugin has to follow.
+  Each plugin is compiled as standalone against this API, the result is a shared library which is loaded dynamically at runtime (using `dlopen` and alike).
+  Which plugins the compiler should use can then be specified via commandline parameters, eg:
+
+      $ ./mCc --plugin plugins/remove_unnecessary_parenthesis.so --plugin plugins/simplify_unary_minus_on_literal.so -o example01 example01.mC
