@@ -162,7 +162,7 @@ You'd have to do this via a loop, assigning every element:
 
 ### Call by Value / Call by Reference
 
-`bool`, `int`, and `float` are passed by value, while `string` and arrays are passed by reference
+`bool`, `int`, and `float` are passed by value, while `string` and arrays are passed by reference.
 
 ### Type Conversion
 
