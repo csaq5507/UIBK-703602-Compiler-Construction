@@ -18,7 +18,7 @@ An example for this can be found in the provided code.
 
 If you decide to use the provided code-base, make sure you understand it.
 Modify it to your liking before continuing with the assignment.
-State *and justify* all modifications in the markdown file `doc/changes.md`.
+State *and justify* modifications not directly related to any of the following tasks in the markdown file `doc/changes.md` -- simply append to it.
 
 ## Task 1
 
