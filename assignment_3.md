@@ -41,6 +41,15 @@ Double check whether the built-in functions provided to your back-end compiler u
 
 You should now have a working compiler which can convert valid mC input programs to executables.
 
+## Task 4
+
+Polish the commandline parameter handling of your main compiler executable.
+At least the following flags must be provided:
+
+- provide `-h` / `--help` to display usage information
+- provide `-v` / `--version` to display version information
+- provide `-o` / `--output` to specify the resulting executable
+
 ## Submission
 
 Follow the steps stated in the first assignment, using the following command to build the archive and the link below.
