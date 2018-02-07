@@ -15,6 +15,14 @@ The parser interface should stay exactly the same (`parser.h`).
 Do not discard the *old* parser from your code-base.
 Add a switch to your build system (generator) which allows one to switch between the generated and handwritten parser at compile time.
 
+## Task 3
+
+- Enable your compiler to take multiple source files as input.
+
+Each source file is parsed independently and the results are combined.
+You should not have to modify the remaining pipeline of the compiler.
+Although, you might want to add the filename to your source location information.
+
 ## Submission
 
 Follow the steps stated in the first assignment, using the following command to build the archive and the link below.
