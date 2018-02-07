@@ -79,3 +79,5 @@ Each team (not each person):
 6. send me the resulting archive using the following link (do not modify the subject)
 
 :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)
+
+*Note:* You might want to tag the revision you are submitting.
