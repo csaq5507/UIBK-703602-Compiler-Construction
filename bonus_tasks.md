@@ -42,3 +42,20 @@ You are not obliged to implement them, but doing so may shift your grade.
   Which plugins the compiler should use can then be specified via commandline parameters, eg:
 
       $ ./mCc --plugin plugins/remove_unnecessary_parenthesis.so --plugin plugins/simplify_unary_minus_on_literal.so -o example01 example01.mC
+
+## General
+
+- Parallelise the following stages of your compilation pipeline:
+
+  - parsing of multiple source files
+  - running semantic checks
+  - Control-Flow Graph generation per function
+  - TAC generation per function
+  - ASM code generation per function
+  - ...
+
+  This is about making your compiler even faster by utilising multiple threads.
+  Most tasks done by the compiler work on files / functions independently and are therefore easy to parallelise.
+
+  I recommend maintaining a thread pool with about as many threads as their are CPU threads and a work queue from which the threads draw their tasks.
+  You should also add a way to override the thread pool size, either through an environment variable or a commandline parameter (`-j`).
