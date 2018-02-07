@@ -45,6 +45,9 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 ## General
 
+- Setup continuous integration (CI) so new revisions are automatically built and tested.
+  See [GitLab CI](https://about.gitlab.com/features/gitlab-ci-cd/) or [Travis CI](https://travis-ci.org/).
+
 - Parallelise the following stages of your compilation pipeline:
 
   - parsing of multiple source files
