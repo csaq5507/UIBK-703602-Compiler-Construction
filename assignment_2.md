@@ -10,6 +10,7 @@ In this assignment you have to implement the following checks:
 
 - check for use of undeclared variable
 - check for multiple declarations of the same variable in the same scope
+- check for duplicated functions
 - check for use of unknown functions and presence of `main`
 - check that all execution paths of a function return a value (except for `void`)
 - type checking
@@ -67,6 +68,8 @@ If no entry exists, you just found an undeclared variable and should report an e
 - Implement a check to detect uses of unknown functions.
 - Implement a check which ensures there is one function named `main` present.
   It should not take any parameters and can return either `void` or `int`.
+- Implement a check which ensures that every function has a unique name.
+  Also take the builtin functions into account.
 
 The top-level grammar rule of mC states that a `program` consists of 0 or more function definitions.
 Therefore, by simply looking at the top most part of the AST you can easily see all functions defined.
