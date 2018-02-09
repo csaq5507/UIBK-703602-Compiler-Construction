@@ -61,6 +61,8 @@ Also, keep the following in mind, taken from [Linux Kernel Coding Style]:
 > A human brain can generally easily keep track of about 7 different things, anything more and it gets confused.
 > You know you’re brilliant, but maybe you'd like to understand what you did 2 weeks from now.
 
+[Linux Kernel Coding Style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
+
 ## System
 
 I'll be using a virtualised, updated Ubuntu 17.10 (64 bit) to examine your submissions.
@@ -96,5 +98,3 @@ Your README must include instructions on how to build your code, run your unit a
 
 My recommendation is to build yourself an integration test runner.
 Otherwise, the same conditions as for unit testing frameworks apply.
-
-[Linux Kernel Coding Style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
