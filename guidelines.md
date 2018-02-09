@@ -71,6 +71,7 @@ This information tells you which software versions I'll be using.
 
 You may use either [Meson], [CMake], Autotools, or plain Makefiles as build system (generator).
 Yet, the dependencies between your source files must be modelled correctly.
+If you *really* want to use a different build system, let us talk about it.
 
 [Meson]: <http://mesonbuild.com/>
 [CMake]: <https://cmake.org/>
