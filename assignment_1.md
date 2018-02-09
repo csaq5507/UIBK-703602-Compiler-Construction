@@ -30,8 +30,8 @@ Implement an abstract syntax tree (AST) which models the input language.
 
 Provide a mechanism to print a given AST in the [DOT format] so it can be visualised using [Graphviz].
 
-[DOT format]: <https://en.wikipedia.org/wiki/DOT_(graph_description_language)>
-[Graphviz]: <https://graphviz.gitlab.io/>
+[DOT format]: https://en.wikipedia.org/wiki/DOT_(graph_description_language)
+[Graphviz]: https://graphviz.gitlab.io/
 
 ## Task 2
 

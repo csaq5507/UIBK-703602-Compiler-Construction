@@ -61,7 +61,7 @@ Also, keep the following in mind, taken from [Linux Kernel Coding Style]:
 > A human brain can generally easily keep track of about 7 different things, anything more and it gets confused.
 > You know you’re brilliant, but maybe you'd like to understand what you did 2 weeks from now.
 
-[Linux Kernel Coding Style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
+[Linux Kernel Coding Style]: https://www.kernel.org/doc/html/v4.10/process/coding-style.html
 
 ## System
 
@@ -75,8 +75,8 @@ You may use either [Meson], [CMake], Autotools, or plain Makefiles as build syst
 Yet, the dependencies between your source files must be modelled correctly.
 If you *really* want to use a different build system, let us talk about it.
 
-[Meson]: <http://mesonbuild.com/>
-[CMake]: <https://cmake.org/>
+[Meson]: http://mesonbuild.com/
+[CMake]: https://cmake.org/
 
 The default configuration should be a *release build*.
 Switching to a *debug build* configuration should be possible via a commandline switch.

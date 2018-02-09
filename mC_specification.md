@@ -20,7 +20,7 @@ The next segment presents the grammar of mC using this notation:
 - `" "` indicates a terminal string
 - `/ /` indicates a [RegEx]
 
-[RegEx]: <https://www.regular-expressions.info/>
+[RegEx]: https://www.regular-expressions.info/
 
 ```
 # Primitives
