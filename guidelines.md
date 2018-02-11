@@ -70,7 +70,7 @@ Also, keep the following in mind, taken from [Linux Kernel Coding Style]:
 
 ## System
 
-I'll be using a virtualised, updated Ubuntu 17.10 (64 bit) to examine your submissions.
+I'll be using a virtualised, updated Debian Testing (Buster) (64 bit) to examine your submissions.
 The submitted code has to compile and run on this system.
 This information tells you which software versions I'll be using.
 
