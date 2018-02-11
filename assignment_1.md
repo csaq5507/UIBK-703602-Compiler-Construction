@@ -21,8 +21,8 @@ Modify it to your liking before continuing with the assignment.
 State *and justify* modifications not directly related to any of the following tasks in the markdown file `doc/changes.md` -- simply append to it.
 
 Note that the provided code-base supports micro-benchmarks.
-Please remove the related code from `meson.build` as well as the `benchmark` directory if you don't use them.
-Micro-benchmark are not required throughout this course.
+If you decide not to use them, please remove the related code from `meson.build` as well as the `benchmark` directory.
+Micro-benchmarks are not required throughout this course.
 
 ## Task 1
 
