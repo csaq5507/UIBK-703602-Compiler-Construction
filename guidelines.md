@@ -32,7 +32,6 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 
 ## Markdown Files
 
-- lines may exceed 80 columns
 - use newlines to separate sentences (works best when using Git)
 - try to be compatible with [Pandoc](https://pandoc.org/)'s interpretation of Markdown
 
