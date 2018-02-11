@@ -6,8 +6,8 @@ The goal of this assignment is to implement the parts remaining to obtain an exe
 Additionally, you are asked to create the control flow graph (CFG) which will be used later on for optimisations.
 
 For simplicity we are targeting x86, not x86_64.
-You will need the [32 bit libc dev package](https://stackoverflow.com/a/7412698) when doing this on a 64 bit system.
-Additionally you should pass `-m32` to GCC when compiling your generated assembler code.
+This can be achieved on a 64 bit installation by passing `-m32` to GCC when compiling your generated assembler code.
+For this, the [GCC multilib package](https://packages.debian.org/buster/gcc-multilib) needs to be installed.
 
 ## Task 1
 
