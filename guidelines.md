@@ -40,6 +40,12 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 - use a formatting tool, like [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html)
 - stick to the formatting used in the provided code-base (similar to [Linux Kernel Coding Style])
 - lines should not exceed 80 columns
+- use the following order for your includes:
+  - corresponding header (`ast.c` -> `ast.h`)
+  - C system headers
+  - C++ system headers
+  - other library headers
+  - other headers of the same project
 - the structure of a source file should be similar to its corresponding header file
     - separators can be helpful
 
