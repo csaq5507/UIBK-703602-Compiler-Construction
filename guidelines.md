@@ -1,10 +1,10 @@
 # Guidelines
 
-Deviate from these guidelines only if you have a valid reasons to do so.
+Deviate from these guidelines only if you have valid reasons to do so.
 
 ## General
 
-- *implementing* something also implies that it is *properly* (unit) tested, otherwise it is not considered implemented!
+- *implementing* also implies that it is *properly* (unit) tested, otherwise it is not considered implemented!
 - don't be a git -- use [Git](https://git-scm.com/)!
 - files are UTF-8 encoded and use Unix line-endings (`\n`)
 - files contain *one* newline at the end
@@ -17,6 +17,8 @@ Deviate from these guidelines only if you have a valid reasons to do so.
     - use persistent links when possible
     - this also applies to work taken from other teams
     - ideas / inspirations should be referenced too
+
+> Credit where credit is due.
 
 ## Plain-Text Files
 
@@ -32,7 +34,7 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 
 ## Markdown Files
 
-- use newlines to separate sentences (works best when using Git)
+- use newlines to separate sentences (works well when using Git)
 - try to be compatible with [Pandoc](https://pandoc.org/)'s interpretation of Markdown
 
 ## C/C++ Files
@@ -41,13 +43,12 @@ See issues of the [Phrack magazine](http://www.phrack.org/) as reference.
 - stick to the formatting used in the provided code-base (similar to [Linux Kernel Coding Style])
 - lines should not exceed 80 columns
 - use the following order for your includes:
-  - corresponding header (`ast.c` -> `ast.h`)
-  - C system headers
-  - C++ system headers
-  - other library headers
-  - other headers of the same project
+    - corresponding header (`ast.c` -> `ast.h`)
+    - system headers
+    - other library headers
+    - other headers of the same project
 - the structure of a source file should be similar to its corresponding header file
-    - separators can be helpful
+    - separators can be helpful, but they should not distract the reader
 
 Also, keep the following in mind, taken from [Linux Kernel Coding Style]:
 
@@ -76,12 +77,9 @@ This information tells you which software versions I'll be using.
 
 ## Build System
 
-You may use either [Meson], [CMake], Autotools, or plain Makefiles as build system (generator).
+You may use either [Meson](http://mesonbuild.com/), [CMake](https://cmake.org/), Autotools, or plain Makefiles as build system (generator).
 Yet, the dependencies between your source files must be modelled correctly.
-If you *really* want to use a different build system, let us talk about it.
-
-[Meson]: http://mesonbuild.com/
-[CMake]: https://cmake.org/
+Talk to me if you *really* want to use a different build system.
 
 The default configuration should be a *release build*.
 Switching to a *debug build* configuration should be possible via a commandline switch.
@@ -95,11 +93,13 @@ Just make sure it is present as package in my examination system's default packa
 All of your unit tests should be run issuing only a single command (given the tests have been built).
 I am expecting something like:
 
-    $ ninja test
-
-Your README must include instructions on how to build your code, run your unit and integration tests.
+    $ meson test
 
 ## Integration Testing
 
 My recommendation is to build yourself an integration test runner.
 Otherwise, the same conditions as for unit testing frameworks apply.
+
+## README
+
+Always provide a README listing pre-requisites and containing instructions for building, and running tests.
