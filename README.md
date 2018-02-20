@@ -9,7 +9,7 @@
 | 2018-06-06 | Assignment 4 | Recursive Descent Parser             |
 | 2018-06-27 | Assignment 5 | Optimisations                        |
 
-The lab will take place in HSB 5.
+The lab will take place in HSB 5 (group 1) / RR15 (group 2).
 
 ## Structure
 
