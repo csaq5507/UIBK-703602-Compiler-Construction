@@ -9,7 +9,7 @@ Deviate from these guidelines only if you have valid reasons to do so.
 - files are UTF-8 encoded and use Unix line-endings (`\n`)
 - files contain *one* newline at the end
 - lines do not contain trailing white-space
-- enable and minimise compiler warnings
+- enable (`-Wall -Wextra`) and minimise compiler warnings
 - do not waste time or space (memory leaks)
 - check for leaks using `valgrind`, especially in error cases
 - keep design and development principles in mind, especially KISS and DRY
