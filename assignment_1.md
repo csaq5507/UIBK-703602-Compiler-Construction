@@ -75,14 +75,18 @@ Each team (not each person):
 1. `cd` into your compiler repository
 2. commit all pending changes
 3. checkout the revision you want to submit
-4. ensure the revision builds, and all unit and integration tests succeed
-5. run the following command where `XX` is the number of your team with leading zero (eg `07`)
+4. ensure everything works:
+    - it builds
+    - all unit tests are successful
+    - all integration tests are successful
+    - no noticeable memory leaks when running tests through `valgrind`
+    - (optional) no performance bugs are noticeable when running micro-benchmarks
+5. (optional) add a tag to this revision so you know exactly which one was submitted
+6. run the following command where `XX` is the number of your team with leading zero (eg `07`)
 
        $ git archive --prefix=team_XX_assignment_1/ --format=zip HEAD > team_XX_assignment_1.zip
 
-6. verify that the resulting archive contains everything you want to submit, and nothing more (no binaries, etc)
-7. send me the resulting archive using the following link (do not modify the subject)
+7. verify that the resulting archive contains everything you want to submit, and nothing more (no binaries, etc)
+8. send me the resulting archive using the following link (do not modify the subject)
 
 :email: [send email](mailto:alexander.hirsch@uibk.ac.at?subject=703602%20-%20Assignment%201)
-
-*Note:* You might want to tag the revision you are submitting.
