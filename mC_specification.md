@@ -47,8 +47,9 @@ string_literal   = /"[^"]*"/
 unary_op         = "-" | "!"
 
 binary_op        = "+"  | "-" | "*" | "/"
-                 | "==" | "!="
                  | "<"  | ">" | "<=" | ">="
+                 | "&&" | "||"
+                 | "==" | "!="
 
 
 # Types
@@ -125,7 +126,7 @@ Comments are discarded by the parser, but do not forget to take newlines into ac
 ### Boolean
 
 For mC we consider `bool` a first-class citizen, distinct from `int`.
-Yet we skip on boolean binary operators like `&&` and `||`.
+The operators `!`, `&&`, and `||` can only be used for booleans.
 
 ### Strings
 
