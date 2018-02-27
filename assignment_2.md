@@ -92,6 +92,7 @@ This check should also cover call expressions: check for correct number and type
 ## Task 5
 
 - Implement the conversion from AST (including symbol tables) to [three-address code (TAC)](https://en.wikipedia.org/wiki/Three-address_code).
+- Implement a way to output the generated TAC.
 
 The checks from the previous tasks should ensure that your input program is actually valid.
 We now leave the wonderful world of mCc's front-end and enter its core.
