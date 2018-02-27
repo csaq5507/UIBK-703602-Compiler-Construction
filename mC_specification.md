@@ -193,7 +193,7 @@ Hence, instead of writing `int foo(void)` we write `int foo()`, where `foo` is t
 
 ### Dangling Else
 
-A *dangling else* belongs to the innermost `if`.
+A [*dangling else*](https://en.wikipedia.org/wiki/Dangling_else) belongs to the innermost `if`.
 The following mC code snippets are semantically equivalent:
 
     if (c1)              |        if (c1) {
