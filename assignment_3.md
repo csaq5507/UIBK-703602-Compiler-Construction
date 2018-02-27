@@ -46,9 +46,9 @@ You should now have a working compiler which can convert valid mC input programs
 Polish the commandline parameter handling of your main compiler executable.
 At least the following flags must be provided:
 
-- provide `-h` / `--help` to display usage information
-- provide `-v` / `--version` to display version information
-- provide `-o` / `--output` to specify the resulting executable
+- `-h` / `--help`    to display usage information
+- `-v` / `--version` to display version information
+- `-o` / `--output`  to specify the resulting executable
 
 ## Submission
 
