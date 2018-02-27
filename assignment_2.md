@@ -11,8 +11,9 @@ In this assignment you have to implement the following checks:
 - check for use of undeclared variable
 - check for multiple declarations of the same variable in the same scope
 - check for duplicated functions
-- check for use of unknown functions and presence of `main`
-- check that all execution paths of a function return a value (except for `void`)
+- check for use of unknown functions
+- check for presence of `main`
+- check that all execution paths of non-void-functions return a value
 - type checking
 
 To implement these semantic checks, a data structure known as *symbol table* needs to be created.
