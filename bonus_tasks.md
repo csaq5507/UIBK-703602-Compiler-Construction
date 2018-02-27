@@ -39,7 +39,7 @@ You are not obliged to implement them, but doing so may shift your grade.
 
 - Implement the following AST transformation:
 
-      single_expr(unary_op("-"), single_expr(literal(α)))  ⟹  single_expr(literal(- α))
+      single_expr(unary_op("-"), expression(single_expr(literal(α))))  ⟹  single_expr(literal(- α))
 
 ## Assignment 2
 
