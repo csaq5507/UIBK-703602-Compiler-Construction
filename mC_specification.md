@@ -187,7 +187,7 @@ It is possible to call a function before it has been defined.
 
 ### Empty Parameter List
 
-In C, the parameters list of a function taking no arguments contains only `void`.
+In C, the parameter list of a function taking no arguments contains only `void`.
 For mC we simply use an empty parameter list.
 Hence, instead of writing `int foo(void)` we write `int foo()`, where `foo` is the name of a function returning an `int` and taking no arguments.
 
