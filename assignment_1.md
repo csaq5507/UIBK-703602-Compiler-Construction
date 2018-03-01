@@ -62,6 +62,11 @@ Create 4 different, valid example inputs, each around 30 lines of code.
 They do not have to be meaningful, but they should be valid semantically.
 For instance, do not call a function taking 2 parameters with 3 arguments.
 
+Utilise the built-in functions to read values from `stdin` and write results to `stdout`.
+For each example input, provide a `.stdin` and `.stdout` file containing the expected output for the given input.
+See the `fib.mC` example in the provided code-base.
+These input / output files will be used for verification later on.
+
 All 4 examples combined should cover everything stated in the specification.
 
 Also, try to do some computational / memory heavy operations in your mC programs so we can later benchmark the generated code.

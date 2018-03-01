@@ -50,6 +50,12 @@ At least the following flags must be provided:
 - `-v` / `--version` to display version information
 - `-o` / `--output`  to specify the resulting executable
 
+## Task 5
+
+Extend your integration test runner to also execute the generated binary.
+Pass the content of the corresponding `.stdin` file to the binary and compare its output with the corresponding `.stdout` file.
+Matching output indicates success.
+
 ## Submission
 
 Follow the steps stated in the first assignment, using the following command to build the archive and the link below.
