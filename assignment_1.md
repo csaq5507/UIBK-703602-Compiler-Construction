@@ -20,6 +20,11 @@ If you decide to use the provided code-base, make sure you understand it.
 Modify it to your liking before continuing with the assignment.
 State *and justify* modifications not directly related to any of the following tasks in the markdown file `doc/changes.md` -- simply append to it.
 
+*Hint:* There are shortcomings in the provided code-base.
+Some of them are intentional -- to keep the code simple, hence lowering the entry barrier.
+Others may just be an oversight.
+Do not assume that something is correct or optimal just because I wrote it.
+
 Note that the provided code-base supports micro-benchmarks.
 If you decide not to use them, please remove the related code from `meson.build` as well as the `benchmark` directory.
 Micro-benchmarks are not required throughout this course.
