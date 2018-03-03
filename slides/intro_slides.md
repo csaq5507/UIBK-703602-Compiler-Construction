@@ -23,16 +23,33 @@
 
 ## Structure
 
-- split into 5 assignments (~ 3 weeks per assignment)
-- hard deadlines
-- teams of (preferably) 3 people
-- see README for more details
+- Assignment 1: `bison` / `flex` front-end
+- Assignment 2: semantic checks & IR
+- Assignment 3: back-end code generation
+- Assignment 4: recursive descent parser
+- Assignment 5: optimisations
+
+## Workload
+
+- ~ 3 weeks per assignment
+- estimated ~ 30--40 hours per assignment
+- team of 3
+- *hard* deadlines
 
 ## Course Material
 
-- I'll send you a mail with this link:\
-  <https://git.io/vNthX>
-- you should read the README
+You should have received a link to this repo via mail:
+
+<https://git.io/vNthX>
+
+## One More Thing
+
+IRC Channel:
+
+- Server:  chat.freenode.net
+- Channel: ##uibk-compilerconstruction
+
+Link to webchat in mail I wrote.
 
 # Any Questions?
 
