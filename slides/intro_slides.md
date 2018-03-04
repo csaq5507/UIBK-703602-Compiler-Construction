@@ -49,22 +49,25 @@ You should have received a link to this repo via mail:
 
 <https://git.io/vNthX>
 
-## One More Thing
+## Switching Groups
 
-IRC Channel:
+**Last Chance Today**
+
+## IRC Channel
 
 - Server:  chat.freenode.net
 - Channel: ##uibk-compilerconstruction
 
-Link to webchat in mail I wrote.
+Find the link to the webchat in the mail I wrote.
 
 # Any Questions?
 
 ## Then
 
-1. build your team now
+1. build your team now\
+   (consider switching groups)
 2. read through the course material
     - <https://git.io/vNthX>
     - README
-4. come to me, so I can note down the members
-5. I'll stay here for questions
+3. come to me, so I can note down the members
+4. I'll stay here for questions
