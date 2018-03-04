@@ -29,6 +29,13 @@
 - Assignment 4: recursive descent parser
 - Assignment 5: optimisations
 
+## Prerequisites
+
+- C programming
+- software development
+- operating systems
+- (recommended) *formal languages and automata theory*
+
 ## Workload
 
 - ~ 3 weeks per assignment
