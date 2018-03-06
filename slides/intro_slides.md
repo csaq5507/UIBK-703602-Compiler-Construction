@@ -55,7 +55,7 @@ You should have received a link to this repo via mail:
 
 ## IRC Channel
 
-- Server:  chat.freenode.net
+- Server:  webchat.freenode.net
 - Channel: ##uibk-compilerconstruction
 
 Find the link to the webchat in the mail I wrote.
